@@ -25,8 +25,8 @@ export function TrendChart({ values, height = 180, stroke = '#4dd0e1', label }: 
 
     return values
       .map((value, index) => {
-        const x = 16 + (index / Math.max(values.length - 1, 1)) * paddedWidth;
-        const y = 16 + paddedHeight - ((value - min) / range) * paddedHeight;
+        const x = 20 + (index / Math.max(values.length - 1, 1)) * paddedWidth;
+        const y = 20 + paddedHeight - ((value - min) / range) * paddedHeight;
         return `${x},${y}`;
       })
       .join(' ');
